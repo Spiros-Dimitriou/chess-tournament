@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="/css/home.css">
+<main class="containter-fluid">
+    <p class="subtitle">Καλως ήρθες {{user.name}}</p>
+    {{#unless user.adminpriv}}
+    <p>
+        Η βαθίδα σας: {{user.elo}}
+    </p>
+    <p>
+        Έτος γέννησης: {{user.yob}}
+    </p>
+    <p>
+        Κατηγορίες στις οποίες συμμετάσχετε:
+    </p>
+    <table>
+        <tr>
+            <td>Απεριόριστο</td>
+            <td>{{user.unlimited}}</td>
+        </tr>
+        <tr>
+            <td>Blitz 10 λεπτών</td>
+            <td>{{user.min10}}</td>
+        </tr>
+        <tr>
+            <td>Blitz 5 λεπτών</td>
+            <td>{{user.min5}}</td>
+        </tr>
+    </table>
+    <br><br><br>
+    <p>Μπορείτε να απεγγραφείτε απο τον διαγωνισμό παρακάτω (απαιτείται επιβεβαίωση)</p>
+    <button onclick="confirmDelete()" id="pre-delete-button">Απεγγραφή</button>
+    <form action="/delete-profile" method="GET" id="final-deletion" style="display: none">
+        <p>Επιβεβαιώστε</p>
+        <input type="submit">
+    </form>
+    {{/unless}}
+    {{#if user.adminpriv}}
+    <ul style="list-style-type:none;">
+        {{#each messages}}
+        <li>
+            <p class="message-email">Ελήφθη από {{email}}</p>
+            <p class="message-body">{{message}}</p>
+        </li>
+        <br>
+        {{/each}}
+    </ul>
+    {{/if}}
+</main>
+<script>
+    function confirmDelete() {
+        document.getElementById("pre-delete-button").style.display = "none";
+        document.getElementById("final-deletion").style.display = "block";
+    }
+</script>

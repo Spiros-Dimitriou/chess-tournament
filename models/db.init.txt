@@ -1,0 +1,24 @@
+For users:
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) CHARACTER SET utf8 NOT NULL,
+  `email` varchar(45) CHARACTER SET latin1 NOT NULL,
+  `yob` varchar(45) CHARACTER SET latin1 NOT NULL,
+  `elo` varchar(45) CHARACTER SET latin1 NOT NULL,
+  `unlimited` tinyint(4) DEFAULT NULL,
+  `min10` tinyint(4) DEFAULT NULL,
+  `min5` tinyint(4) DEFAULT NULL,
+  `pass` varchar(80) CHARACTER SET latin1 NOT NULL,
+  `adminpriv` tinyint(4) DEFAULT ''0'',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email_UNIQUE` (`email`));
+
+  
+For messages:
+
+CREATE TABLE `chess_db`.`messages` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `email` VARCHAR(45) NOT NULL,
+  `message` VARCHAR(500) CHARACTER SET 'utf8' NOT NULL,
+  PRIMARY KEY (`id`));

@@ -1,0 +1,29 @@
+main form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main form .login-data {
+    margin-right: 1rem;
+    width: 13rem;
+    margin-bottom: 1rem;
+}
+
+main form .login-data input {
+    font-size: inherit;
+    width: 13rem;
+}
+
+button {
+    border-radius: 0.3rem;
+    background-color: lightcoral;
+    font-size: 0.8rem;
+    font-family: inherit;
+}
+
+.login-data {
+    -webkit-user-select: none;       
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

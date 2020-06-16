@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/css/home.css">
+<main class="containter-fluid">
+    <p class="subtitle">Προφίλ του χρήστη {{user.name}}</p>
+    {{#unless user.adminpriv}}
+    <p>
+        Βαθμίδα παίκτη: {{user.elo}}
+    </p>
+    <p>
+        Κατηγορίες στις οποίες συμμετάσχει:
+    </p>
+    <table>
+        <tr>
+            <td>Απεριόριστο</td>
+            <td>{{user.unlimited}}</td>
+        </tr>
+        <tr>
+            <td>Blitz 10 λεπτών</td>
+            <td>{{user.min10}}</td>
+        </tr>
+        <tr>
+            <td>Blitz 5 λεπτών</td>
+            <td>{{user.min5}}</td>
+        </tr>
+    </table>
+    {{/unless}}
+    {{#if user.adminpriv}}
+    <p>
+        Το προφίλ αυτό ανήκει σε διαχειριστή
+    </p>
+    {{/if}}
+</main>

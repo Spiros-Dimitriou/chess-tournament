@@ -1,0 +1,65 @@
+main form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.registration-data {
+    margin-right: 1rem;
+    width: 13rem;
+    margin-bottom: 1rem;
+}
+
+.registration-data input, .registration-data select {
+    font-size: inherit;
+    width: 13rem;
+}
+
+#game-types {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+}
+
+.game-type {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.game-type label {
+    margin-right: 2rem;
+    margin-left: 0.3rem;
+}
+
+input[type=checkbox] {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.3rem 0;
+}
+
+main #form-info, main #game-type-required-message {
+    font-size: 0.8rem;
+}
+
+button {
+    border-radius: 0.3rem;
+    background-color: lightcoral;
+    font-size: 0.8rem;
+    font-family: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.registration-data {
+    -webkit-user-select: none;       
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,10 @@
+main #sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main #sponsors img {
+    padding: 1em;
+    width: 11em;
+}

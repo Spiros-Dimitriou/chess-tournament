@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="/css/register.css">
+<script src="./js/register.js" defer></script>
+<main class="containter-fluid">
+    <p class="subtitle">Δήλωση συμμετοχής</p>
+    <form action="/register" id="reg-form" method="POST">
+        <div class="registration-data">
+            <label for="name">Όνοματεπώνυμο</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="registration-data">
+            <label for="birth-year">Έτος γέννησης</label>
+            <input type="number" min="1900" max="2013" size="4" id="yob" name="yob" required>
+        </div>
+        <div class="registration-data">
+            <label for="email">Διεύθυνση email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="registration-data">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" required>
+        </div>
+        <div class="registration-data">
+            <label for="rank">ELO</label>
+            <select name="user_rank" id="rank">
+                <option value="2">1800+</option>
+                <option value="1">1400-1800</option>
+                <option value="0">ως 1400</option>
+            </select>
+        </div>
+        <div id="game-types">
+            <div class="game-type">
+                <input type="checkbox" name="game_unlimited" id="game-unlimited">
+                <label for="game-unlimited">Απεριόριστο </label>
+            </div>
+            <div class="game-type">
+                <input type="checkbox" name="game_10min" id="game-10min">
+                <label for="game-10min">10min blitz </label>
+            </div>
+            <div class="game-type">
+                <input type="checkbox" name="game_5min" id="game-5min">
+                <label for="game-5min">5min blitz </label>
+            </div>
+        </div>
+    </form>
+    <p id="form-info">
+        <b>Τα πεδία είναι υποχρεωτικά.</b> Εάν δεν γνωρίζετε την κατάταξή σας,
+        επικοινωνήστε με τους διοργανωτές πριν υποβάλλετε την αίτησή σας.
+    </p>
+    <button type="submit" form="reg-form" id="register-button">Δήλωση συμμετοχής</button>
+    <p><span id="game-type-required-message">Επιλέξτε μια τουλάχιστον κατηγορία παιχνιδιού</span></p>
+</main>

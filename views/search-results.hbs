@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="./css/search.css">
+<main class="containter-fluid">
+    <p class="subtitle">Αποτελέσματα αναζήτησης για '{{searchQuery}}'</p>
+    <br>
+    <ul id="users-found">
+        {{#each users}}
+        <li>
+            <p>{{name}}</p>
+            <a href="/profile/{{id}}">Προβολή προφίλ</a>
+        </li>
+        {{/each}}
+    </ul>
+</main>

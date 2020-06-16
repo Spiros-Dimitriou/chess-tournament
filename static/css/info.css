@@ -1,0 +1,15 @@
+main table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 0 20px;
+}
+
+main table tr td img {
+    width: 3em;
+    height: 3em;
+}
+
+main table tr td {
+    text-align: center;
+    padding: 0.5em;
+}

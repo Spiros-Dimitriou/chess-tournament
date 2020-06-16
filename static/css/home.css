@@ -1,0 +1,7 @@
+table tr * {
+    padding: 0 10px;
+}
+
+.message-body {
+    font-size: 0.8rem;
+}

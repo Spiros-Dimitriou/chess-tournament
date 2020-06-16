@@ -1,0 +1,50 @@
+@media screen and (min-width: 1367px) {
+    html {
+      font-size: 1.5vw;
+    }
+}
+  
+@media screen and (max-width: 1366px) {
+    html {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-image: none !important;
+    }
+}
+
+body {
+    background-image: url("/img/chess_background.png");
+    background-color: ivory;
+    background-repeat: no-repeat;
+    background-size: 19em;
+    background-position: right 0px top 3em;
+    font-family: 'Manrope', sans-serif !important;
+}
+
+#title {
+    padding: 1.5em;
+
+    -webkit-user-select: none;       
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#title p {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+main {
+    max-width: 50em;
+}
