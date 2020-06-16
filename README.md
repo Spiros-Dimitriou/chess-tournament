@@ -28,10 +28,10 @@ node ./app.js
 There needs to be a database for the app to work. Change the contents of the .env file for the one you have.
 More info on [npm mySQL](https://www.npmjs.com/package/mysql) and [w3schools](https://www.w3schools.com/nodejs/nodejs_mysql.asp).
 
-###### Initialize Database
+#### Initialize Database
 
 Two tables are required as listed in /models/db.init.txt
 
-###### Notes
+#### Notes
 To insert an admin to the db, the easiest way is to change the query at /models/chessdb.js ln36 with the last value being 1 (admin privileges).
 For safety this has to be done in a local deployment. Go to localhost:3001/register and register an admin.
