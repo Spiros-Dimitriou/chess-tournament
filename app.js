@@ -301,11 +301,6 @@ app.post("/login", redirectHome, (req, res) => {
     });
 });
 
-app.get('/start', redirectLogin, (req, res) => {
-    // console.log("start",req.session.user, req.cookies.user_sid );
-    res.render('start');
-});
-
 app.get('/logout', redirectLogin, (req, res) => {
     req.session.destroy(err => {
         if (err) {
