@@ -1,7 +1,7 @@
 # chess-tournament
  Website that allows chess players to view information, register, sign in and have access to their own data. Supports admin accounts with different privileges.
  
-#### Techlologies used
+#### Technologies/frameworks used
 Frontend:
 HTML, css, bootstrap, js
 
