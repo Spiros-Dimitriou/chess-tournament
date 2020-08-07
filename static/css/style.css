@@ -1,6 +1,6 @@
 @media screen and (min-width: 1367px) {
     html {
-      font-size: 1.5vw;
+      font-size: 1.1vw;
     }
 }
   
@@ -45,6 +45,8 @@ body {
     font-weight: 500;
 }
 
-main {
-    max-width: 50em;
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1400px;
+    }
 }

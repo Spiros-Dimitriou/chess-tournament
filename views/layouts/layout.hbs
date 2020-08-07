@@ -18,7 +18,7 @@
 </head>
 
 <body class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@
                 </li>
                 {{/unless}}
                 {{#if loggedIn}}
-                <li class="nav-item">
+                <li class="nav-item text-nowrap">
                     <a class="nav-link text-danger" href="/my-profile">Το προφίλ μου</a>
                 </li>
                 <li class="nav-item">
@@ -55,8 +55,8 @@
                 </li>
                 {{/if}}
             </ul>
-            <form class="form-inline my-2 my-lg-0" method="POST" action="/search">
-                <input class="form-control mr-sm-2" name="name" type="search" placeholder="Αναζήτηση" aria-label="Search">
+            <form class="form-inline my-lg-0 d-flex flex-nowrap" method="POST" action="/search">
+                <input class="form-control mr-1" name="name" type="search" placeholder="Αναζήτηση" aria-label="Search">
                 <button class="btn btn-light my-2 my-sm-0" type="submit">
                     <img src="/ico/search.svg">
                 </button>
