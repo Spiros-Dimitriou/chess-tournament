@@ -3,12 +3,19 @@
  
 #### Technologies/frameworks used
 Frontend:
-HTML, css, bootstrap, js
+- HTML
+- css
+- bootstrap
+- js
 
 Backend:
-Js, handlebars, mySQL/mySQL workbench, bcrypt, express/express-session
+- js
+- handlebars
+- mySQL & mySQL workbench
+- bcrypt
+- express & express-session
  
-## Installation instructions for localChessTournament_v1.0
+### Installation instructions
 
 #### Deployment Requirements
 
@@ -17,13 +24,13 @@ NodeJS and npm.
 #### Installation and local deployment
 
 First install the modules:
-npm install
+`npm install`
 
 Then to develop (redeploys locally when backend scripts change):
-npm run dev
+`npm run dev`
 
 If you wish for simple deployment:
-node ./app.js
+`node ./app.js`
 
 #### Database Requirements
 
