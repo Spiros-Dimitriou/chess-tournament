@@ -4,16 +4,16 @@
 #### Technologies/frameworks used
 Frontend:
 - HTML
-- css
-- bootstrap
-- js
+- CSS
+- Bootstrap
+- JavaScript
 
 Backend:
-- js
-- handlebars
-- mySQL & mySQL workbench
-- bcrypt
-- express & express-session
+- JavaScript
+- Handlebars
+- mySQL
+- Bcrypt
+- Node Express & Node express-session
  
 ### Installation instructions
 
@@ -23,18 +23,17 @@ NodeJS and npm.
 
 #### Installation and local deployment
 
-First install the modules:
-`npm install`
+`npm install` install modules
 
-Then to develop (redeploys locally when backend scripts change):
-`npm run dev`
+`npm run dev` deploy for development
 
-If you wish for simple deployment:
-`node ./app.js`
+or
+
+`node app.js` for simple deployment
 
 #### Database Requirements
 
-There needs to be a mySQL database for the app to work. Change the contents of the .env file for the one you have.
+The app is designed to work with a mySQL database. Change the contents of the .env file for your db.
 More info on [npm mySQL](https://www.npmjs.com/package/mysql) and [w3schools](https://www.w3schools.com/nodejs/nodejs_mysql.asp).
 
 #### Initialize Database
@@ -42,5 +41,4 @@ More info on [npm mySQL](https://www.npmjs.com/package/mysql) and [w3schools](ht
 Two tables are required as listed in /models/db.init.txt
 
 #### Notes
-To insert an admin to the db, the easiest way is to change the query at /models/chessdb.js ln36 with the last value being 1 (admin privileges).
-For safety I suggest this to be done in a local deployment. Navigate to localhost:3001/register and register an admin.
+To insert an admin to the db, the easiest way, just change the query at /models/chessdb.js ln36 with the last value being 1 (admin privileges). Navigate to localhost:3001/register and register an admin. Revert afterwards.
